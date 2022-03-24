@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Mining_DATH", "Mining_DATH\Mining_DATH.dwproj", "{83F39B6D-7CAF-4145-AB4C-142DE8B90AF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83F39B6D-7CAF-4145-AB4C-142DE8B90AF2}.Development|Default.ActiveCfg = Development
+		{83F39B6D-7CAF-4145-AB4C-142DE8B90AF2}.Development|Default.Build.0 = Development
+		{83F39B6D-7CAF-4145-AB4C-142DE8B90AF2}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65585ECE-ABDD-4FB1-946C-CB7BC26B4AD9}
+	EndGlobalSection
+EndGlobal

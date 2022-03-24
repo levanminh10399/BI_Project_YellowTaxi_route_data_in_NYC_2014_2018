@@ -1,0 +1,54 @@
+-- slice 
+
+select
+{[Dim Date Time].[Hierarchy].[Year],[Dim Date Time].[Hierarchy]}  on columns,
+{[Dim Location].[Hierarchy].[Borough Code],[Dim Location].[Hierarchy]}  on rows
+from [YTT DDS]
+WHERE [Measures].[Num Of Success];
+
+
+-- doanh thu trong nam cua  cac quan
+select
+{[Dim Location].[Hierarchy].[Borough Code],[Dim Location].[Hierarchy]}  on columns,
+{[Dim Date Time].[Hierarchy].[Year],[Dim Date Time].[Hierarchy]}  on rows
+from [YTT DDS]
+WHERE [Measures].[Total Amount];
+
+-- doanh thu cac quy trong nam 2014 cua cac quan
+select 
+non empty {[Dim Location].[Hierarchy].[Borough Code]}  on columns,
+non empty [Dim Date Time].[Hierarchy].[Year] on rows
+from [YTT DDS]
+WHERE [Measures].[Total Amount];
+
+-- doanh thu cac Borough theo tung thang cua tung nam
+select [Measures].[Total Amount] on columns,
+crossjoin ([Dim Date Time].[Hierarchy].[Year],[Dim Date Time].[Month].[Month] ) on rows
+from [YTT DDS];
+
+
+
+
+
+-- sap xep so luong dat xe thanh cong tu thap den cao theo tung NTA
+select
+NON EMPTY [Measures].[Num Of Success] on columns,
+ORDER ([Dim Location].[Hierarchy].[NTA Code],[Measures].[Num Of Success]) on rows
+from [YTT DDS];
+
+-- nhung NTA co doanh thu > 700000
+select
+non empty [Measures].[Total Amount] on columns,
+filter ([Dim Location].[Hierarchy].[NTA Code], [Measures].[Total Amount] > 700000) on rows
+from [YTT DDS];
+-- so luong dat xe tai 5 NTA co so luong fail cao nhat
+select
+non empty [Measures].[Num Of Pick Up Trip] on columns,
+(topcount ([Dim Location].[Hierarchy].[NTA Code],5,[Measures].[Num Of Fail])) on rows
+from [YTT DDS];
+
+
+
+
+
+

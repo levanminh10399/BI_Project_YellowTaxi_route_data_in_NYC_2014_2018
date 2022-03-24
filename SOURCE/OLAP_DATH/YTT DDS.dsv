@@ -1,0 +1,144 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fbf18e1c-1ad5-4686-9ce7-7ba1bba7c8b2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>YTT DDS</ID>
+  <Name>YTT DDS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>YTT DDS</DataSourceID>
+  <Schema>
+    <xs:schema id="YTT_x0020_DDS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="YTT_x0020_DDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="39b80763-5e37-4881-b745-7ca260cef997">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_dimDateTime" msprop:design-time-name="31ff8c04-70f9-41f3-b6f1-3ff4ea2cc67e" msprop:DbTableName="dimDateTime" msprop:FriendlyName="dimDateTime" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateTime" msprop:design-time-name="b5311750-581d-4b9e-8536-7d8df1ad3e16" msprop:DbColumnName="DateTime" msprop:FriendlyName="DateTime" type="xs:dateTime" />
+                  <xs:element name="Hour" msdata:ReadOnly="true" msprop:design-time-name="884d54b9-3de1-49a3-b894-48172381e1ea" msprop:DbColumnName="Hour" msprop:FriendlyName="Hour" type="xs:int" minOccurs="0" />
+                  <xs:element name="Day" msdata:ReadOnly="true" msprop:design-time-name="d3a1de4d-b3f1-43cc-94e2-ce90241ca454" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" minOccurs="0" />
+                  <xs:element name="DayOfWeek" msdata:ReadOnly="true" msprop:design-time-name="efe6c30c-78b3-45bc-aaf2-d5ab1f9f3c4f" msprop:DbColumnName="DayOfWeek" msprop:FriendlyName="DayOfWeek" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msdata:ReadOnly="true" msprop:design-time-name="703977cd-6f08-4cd1-bc58-04e2fcda72f0" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter" msdata:ReadOnly="true" msprop:design-time-name="79ba6252-9792-401a-846d-19b6420ddadd" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msdata:ReadOnly="true" msprop:design-time-name="69193e1c-e8ed-45d8-9ff0-71ccf55f8c0b" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Created_timestamp" msprop:design-time-name="e01e8ef7-8f24-40ff-a184-0746cc89f1f6" msprop:DbColumnName="Created_timestamp" msprop:FriendlyName="Created_timestamp" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Updated_timestamp" msprop:design-time-name="4412d706-9b85-4eda-99f4-54051d47ed5f" msprop:DbColumnName="Updated_timestamp" msprop:FriendlyName="Updated_timestamp" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dimLocation" msprop:design-time-name="a7723bd9-ccb3-4960-9b4f-cda001ece4db" msprop:DbTableName="dimLocation" msprop:FriendlyName="dimLocation" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDCensusBlock" msprop:design-time-name="d5aa6799-d7a4-420d-a4ab-830f2d435701" msprop:DbColumnName="IDCensusBlock" msprop:FriendlyName="IDCensusBlock" type="xs:int" />
+                  <xs:element name="NTACode" msprop:design-time-name="f90cfc90-4d37-431a-9383-ce6036729e44" msprop:DbColumnName="NTACode" msprop:FriendlyName="NTACode" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NTA_name" msprop:design-time-name="1acaefee-970a-4d7e-80c3-9825524a03ab" msprop:DbColumnName="NTA_name" msprop:FriendlyName="NTA_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BoroughCode" msprop:design-time-name="541d27bc-b6af-4b54-b279-0a0235dc602c" msprop:DbColumnName="BoroughCode" msprop:FriendlyName="BoroughCode" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BoroughName" msprop:design-time-name="b62e52c5-aa53-4f7f-a053-1bfffbdbb8a2" msprop:DbColumnName="BoroughName" msprop:FriendlyName="BoroughName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Shape_length" msprop:design-time-name="b1bbf132-8815-4eb5-b52c-f6614132c7ed" msprop:DbColumnName="Shape_length" msprop:FriendlyName="Shape_length" type="xs:double" minOccurs="0" />
+                  <xs:element name="Shape_Area" msprop:design-time-name="e2b1dd4e-3a31-4f5e-a460-0c61a390ec22" msprop:DbColumnName="Shape_Area" msprop:FriendlyName="Shape_Area" type="xs:double" minOccurs="0" />
+                  <xs:element name="create_timestamp" msprop:design-time-name="24bcb9e9-8235-4093-bc81-bbd7693e2549" msprop:DbColumnName="create_timestamp" msprop:FriendlyName="create_timestamp" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="update_timestamp" msprop:design-time-name="76b86af8-5035-49eb-b9c9-db4ca2b7fbc7" msprop:DbColumnName="update_timestamp" msprop:FriendlyName="update_timestamp" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_f_TaxiTrip" msprop:design-time-name="06646987-83c3-4350-9788-212c607d5665" msprop:DbTableName="f_TaxiTrip" msprop:FriendlyName="f_TaxiTrip" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDCensusBlock" msprop:design-time-name="e5c01f52-d40d-4c93-b6a1-f4272f12ba61" msprop:DbColumnName="IDCensusBlock" msprop:FriendlyName="IDCensusBlock" type="xs:int" />
+                  <xs:element name="DateTime" msprop:design-time-name="b758304e-4d0c-47d9-b917-4b578ecf14cd" msprop:DbColumnName="DateTime" msprop:FriendlyName="DateTime" type="xs:dateTime" />
+                  <xs:element name="NumOfPickUpTrip" msprop:design-time-name="d03e4801-3792-4a41-88bc-c15278dd6480" msprop:DbColumnName="NumOfPickUpTrip" msprop:FriendlyName="NumOfPickUpTrip" type="xs:int" minOccurs="0" />
+                  <xs:element name="NumOfDropOffTrip" msprop:design-time-name="bb0ddb35-b895-416c-8a6d-dae07dbd6bfb" msprop:DbColumnName="NumOfDropOffTrip" msprop:FriendlyName="NumOfDropOffTrip" type="xs:int" minOccurs="0" />
+                  <xs:element name="NumOfSuccess" msprop:design-time-name="a7d26ca8-11cc-4975-aa22-82c74d69d346" msprop:DbColumnName="NumOfSuccess" msprop:FriendlyName="NumOfSuccess" type="xs:int" minOccurs="0" />
+                  <xs:element name="NumOfFail" msprop:design-time-name="f27fa045-c9db-4d21-8fc0-bca6ac130edf" msprop:DbColumnName="NumOfFail" msprop:FriendlyName="NumOfFail" type="xs:int" minOccurs="0" />
+                  <xs:element name="Total_amount" msprop:design-time-name="cbd5013a-754c-46a0-92ca-84c5b2328392" msprop:DbColumnName="Total_amount" msprop:FriendlyName="Total_amount" type="xs:double" minOccurs="0" />
+                  <xs:element name="Created_timestamp" msprop:design-time-name="fc4b802b-4613-425f-bbf4-cbcb2d0cc36a" msprop:DbColumnName="Created_timestamp" msprop:FriendlyName="Created_timestamp" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Update_timestamp" msprop:design-time-name="55ef596d-4744-4f77-96b8-ba952776ed0b" msprop:DbColumnName="Update_timestamp" msprop:FriendlyName="Update_timestamp" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dimDateTime" />
+          <xs:field xpath="DateTime" />
+        </xs:unique>
+        <xs:unique name="dbo_dimLocation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dimLocation" />
+          <xs:field xpath="IDCensusBlock" />
+        </xs:unique>
+        <xs:unique name="dbo_f_TaxiTrip_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_f_TaxiTrip" />
+          <xs:field xpath="IDCensusBlock" />
+          <xs:field xpath="DateTime" />
+        </xs:unique>
+        <xs:keyref name="fk_cencus_f_TaxiTrip" refer="dbo_dimLocation_Constraint1">
+          <xs:selector xpath=".//dbo_f_TaxiTrip" />
+          <xs:field xpath="IDCensusBlock" />
+        </xs:keyref>
+        <xs:keyref name="fk_Datetime_f_TaxiTrip" refer="Constraint1">
+          <xs:selector xpath=".//dbo_f_TaxiTrip" />
+          <xs:field xpath="DateTime" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <YTT_x0020_DDS xmlns="" />
+  </Schema>
+</DataSourceView>
